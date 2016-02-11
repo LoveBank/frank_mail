@@ -5,8 +5,6 @@ gem 'frank', :git => 'git://github.com/LoveBank/frank.git'
 gem 'awesome_print'
 gem 'rails', "~> 4.2.5"
 gem 'pg'
-gem 'sass-rails'
-gem 'uglifier'
 gem 'postmark-rails', '~> 0.12.0'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
