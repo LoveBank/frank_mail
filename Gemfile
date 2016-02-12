@@ -6,6 +6,7 @@ gem 'awesome_print'
 gem 'rails', "~> 4.2.5"
 gem 'pg'
 gem 'postmark-rails', '~> 0.12.0'
+gem 'newrelic_rpm'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby

@@ -104,6 +104,7 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     nenv (0.3.0)
+    newrelic_rpm (3.14.1.311)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     notiffany (0.0.8)
@@ -212,6 +213,7 @@ DEPENDENCIES
   frank!
   guard-rspec
   letter_opener
+  newrelic_rpm
   pg
   postmark-rails (~> 0.12.0)
   pry-rails
