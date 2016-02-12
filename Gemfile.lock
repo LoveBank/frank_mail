@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/LoveBank/frank.git
-  revision: 6b58203dfac6effffc670b232f11b34ee45f1563
+  revision: e710457105061cd4c6b7fb23610f128aff117305
   specs:
-    frank (0.0.2)
+    frank (0.0.3)
       rails (~> 4.2.5)
 
 GEM
@@ -104,7 +104,7 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     nenv (0.3.0)
-    newrelic_rpm (3.14.1.311)
+    newrelic_rpm (3.14.3.313)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     notiffany (0.0.8)
