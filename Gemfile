@@ -3,6 +3,7 @@ ruby '2.3.0'
 gem 'frank', :git => 'git://github.com/LoveBank/frank.git'
 
 gem 'awesome_print'
+gem 'rack-cors', :require => 'rack/cors'
 gem 'rails', "~> 4.2.5"
 gem 'pg'
 gem 'postmark-rails', '~> 0.12.0'
