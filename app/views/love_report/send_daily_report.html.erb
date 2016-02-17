@@ -200,8 +200,7 @@
                               <th align="left" width="10px">Rating</th>
                             </tr>
                             <%
-                              @time = Time.zone.yesterday.beginning_of_day
-                              @user.partners_entries(@time).each do |entry| %>
+                              @entries.each do |entry| %>
                               <%= render partial: 'daily_entry', locals: {entry: entry} %>
                             <% end %>
                           </table>

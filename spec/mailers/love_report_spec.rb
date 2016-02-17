@@ -4,6 +4,7 @@ RSpec.describe LoveReport do
   describe 'report' do
     let(:user) { FactoryGirl.build_stubbed(:frank_profile) }
     let(:mail) { LoveReport.send_daily_report(user) }
+    let(:entry) { FactoryGirl.build_stubbed(:frank_entry, :note => 'My awesome comment') }
 
     before(:each) do
       ActionMailer::Base.deliveries = []

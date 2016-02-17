@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/LoveBank/frank.git
-  revision: d496df9472148de4d96559d6ce48db8b8388a450
+  revision: f91333cefb036077dc577721bdadb9217323f3b4
   specs:
     frank (0.0.3)
       rails (~> 4.2.5)
@@ -111,7 +111,7 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     pg (0.18.4)
-    postmark (1.7.0)
+    postmark (1.7.1)
       json
       rake
     postmark-rails (0.12.0)
