@@ -189,8 +189,8 @@
                   <h1>Hi <%=@user.firstname%>,</h1>
                   <p>Here is your daily partners report of deposits you made yesterday.</p>
                   <table width="100%" cellpadding="0" cellspacing="0">
-                    <tr><td>This weeks average rating: <%=@average_rating(@user)%></td></tr>
-                    <tr><td>Last weeks average rating: <%=@last_weeks_average_rating(@user)%></td></tr>
+                    <tr><td>This weeks average rating: <%=average_rating(@user)%></td></tr>
+                    <tr><td>Last weeks average rating: <%=last_weeks_average_rating(@user)%></td></tr>
                   </table>
                   <!-- Action -->
                   <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0">

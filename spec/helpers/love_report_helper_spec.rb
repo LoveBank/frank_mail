@@ -18,7 +18,7 @@ RSpec.describe LoveReportHelper, type: :helper do
       subject(:profile) { FactoryGirl.create(:frank_profile, :with_partner_entries) }
 
       it 'calculates an average' do
-        expect(LoveReport.average_rating(subject)).to eql 3
+        expect(average_rating(subject)).to eql 3
       end
     end
 
@@ -26,7 +26,7 @@ RSpec.describe LoveReportHelper, type: :helper do
       subject(:profile) { FactoryGirl.create(:frank_profile, :with_partner_entries_last_week) }
 
       it 'calculates an average' do
-        expect(LoveReport.last_weeks_average_rating(subject)).to eql 2
+        expect(last_weeks_average_rating(subject)).to eql 2
       end
     end
 

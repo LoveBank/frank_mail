@@ -34,7 +34,7 @@ RSpec.describe LoveReport do
     end
 
     it 'assigns @confirmation_url' do
-      expect(mail.body.encoded).to match("<h1>Hi, #{user.firstname}</h1>")
+      expect(mail.body.encoded).to match("<h1>Hi #{user.firstname},</h1>")
     end
   end
 
