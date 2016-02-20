@@ -2,9 +2,8 @@ require 'rails_helper'
 
 RSpec.describe LoveReport do
   describe 'report' do
-    let(:user) { FactoryGirl.build_stubbed(:frank_profile) }
+    let(:user) { FactoryGirl.create(:frank_profile, :with_partner_entries) }
     let(:mail) { LoveReport.send_daily_report(user) }
-    let(:entry) { FactoryGirl.build_stubbed(:frank_entry, :note => 'My awesome comment') }
 
     before(:each) do
       ActionMailer::Base.deliveries = []
@@ -15,8 +14,7 @@ RSpec.describe LoveReport do
     end
 
     it 'should send an email' do
-      mail.deliver_now
-      expect(ActionMailer::Base.deliveries.count).to eql 1
+      expect { mail.deliver_now }.to change { ActionMailer::Base.deliveries.count }.by(1)
     end
 
     it 'renders the subject' do
@@ -39,4 +37,9 @@ RSpec.describe LoveReport do
       expect(mail.body.encoded).to match("<h1>Hi, #{user.firstname}</h1>")
     end
   end
+
+  describe 'report summary headings' do
+
+  end
+
 end
