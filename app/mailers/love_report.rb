@@ -1,4 +1,5 @@
 class LoveReport < ApplicationMailer
+  include LoveReportHelper
   default :from => 'report@treasury.love'
 
   # send a daily report
@@ -6,6 +7,7 @@ class LoveReport < ApplicationMailer
     Rails.logger.info "Processing daily report for #{user.email}"
     @user = user
     @entries = @user.partners_entries
+
     if @entries.count > 0
       mail( :to => @user.email,
             :subject => 'Your daily LoveBank report' )
