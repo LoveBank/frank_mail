@@ -187,7 +187,7 @@
               <tr>
                 <td class="content-cell">
                   <h1>Hi <%=@user.firstname%>,</h1>
-                  <p>Here is your daily partners report of deposits you made yesterday.</p>
+                  <p>Deposits that you made in your partners Love Bank on <%=1.day.ago.strftime('%a, %b %d %Y') %></p>
                   <table width="100%" cellpadding="0" cellspacing="0">
                     <tr><td>This weeks average rating: <%=average_rating(@user)%></td></tr>
                     <tr><td>Last weeks average rating: <%=last_weeks_average_rating(@user)%></td></tr>
@@ -197,7 +197,7 @@
                     <tr>
                       <td align="center">
                         <div>
-                          <table class="body-sub" width="100%" cellpadding="1" cellspacing="1">
+                          <table class="body-sub" width="100%" cellpadding="3" cellspacing="3">
                             <tr>
                               <th align="left">Note</th>
                               <th align="left" width="10px">Rating</th>
@@ -221,7 +221,7 @@
             <table class="email-footer" align="center" width="570" cellpadding="0" cellspacing="0">
               <tr>
                 <td class="content-cell">
-                  <p class="sub center">&copy; 2016 Love Bank. All rights reserved.</p>
+                  <p class="sub center">Love Bank</p>
                 </td>
               </tr>
             </table>
