@@ -10,6 +10,7 @@ gem 'pg'
 gem 'postmark-rails', '~> 0.12.0'
 gem 'newrelic_rpm'
 gem 'responders'
+gem 'slack-notifier'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
