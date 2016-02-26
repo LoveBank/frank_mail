@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width" />
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>ZURBemails</title>
+  <title>Love Bank Report</title>
 
   <style type="text/css" rel="stylesheet" media="all">
     /* -------------------------------------
@@ -66,6 +66,9 @@
     .callout a {
       font-weight: bold;
       color: #2BA6CB;
+    }
+    .rating {
+      font-weight: bold;
     }
 
     table.social {
@@ -394,8 +397,10 @@
               <p>Review each entry as it likely provides insights. Entries with higher ratings likely speak more love than entries with lower ratings.</p>
               <!-- Callout Panel -->
               <% @entries.each do |entry| %>
-                  <h6>Rating of <%= entry.rating %></h6>
                   <p class="callout">
+                    <span class="rating">
+                      Rating of <%= entry.rating %><br>
+                    </span>
                     <%= entry.note %>
                   </p>
               <% end %>
