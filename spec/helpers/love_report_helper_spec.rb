@@ -20,6 +20,11 @@ RSpec.describe LoveReportHelper, type: :helper do
       it 'calculates an average' do
         expect(average_rating(subject)).to eql 3
       end
+
+      it 'handles entries with nil rating' do
+        subject.partners_entries.last.update(:rating => nil)
+        expect(average_rating(subject)).to eql 3
+      end
     end
 
     context 'last week' do
